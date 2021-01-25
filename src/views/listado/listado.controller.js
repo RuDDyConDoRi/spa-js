@@ -16,14 +16,14 @@ export default async() => {
     const posts = await getPosts();
     posts.forEach(post => {
         postsElement.innerHTML += `
-            <li>
-                <h5>
-                    ${post.title}
-                </h5>
-                <p>
-                    ${post.body}
-                </p>
-            </li>
+            <div class="frame">
+                <div class="heading">${post.title}</div>
+                <div class="content">
+                    <div class="p-2">
+                        ${post.body}    
+                    </div>
+                </div>
+            </div>
         `
     });
 

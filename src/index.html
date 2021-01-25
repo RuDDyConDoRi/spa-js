@@ -5,16 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPA Template</title>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#/">Inicio</a></li>
-            <li><a href="#/registro">Registro</a></li>
-            <li><a href="#/listado">Listado</a></li>
-        </ul>
-    </nav>
+<body>  
+    <div class="h-vh-100 bg-light">
+        <aside class="sidebar pos-absolute z-2" 
+              data-role="sidebar" 
+              data-toggle="#sidebar-toggle-3" 
+              id="sb3"
+              data-shift=".shifted-content">
+          <div class="sidebar-header bg-green" 
+              >
+            <div class="avatar">
+              <img data-email="rucocool@gmail.com" >
+            </div>
+            <span class="title fg-white">RuCorp. Software</span>
+            <span class="subtitle fg-white"> 2021 © Ruddy Condori</span>
+          </div>
 
-    <section id="root"></section>
+          <ul class="sidebar-menu">
+            <li>
+                <a href="#/">
+                    <span class="mif-target icon"></span>
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a href="#/listado">
+                    <span class="mif-search icon"></span>
+                    Listado
+                </a>
+            </li>
+            <li>
+                <a href="#/registro">
+                    <span class="mif-files-empty icon"></span>
+                    Registro
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <span class="mif-images icon"></span>
+                    Contacto
+                </a>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="shifted-content h-100 p-ab">
+          <div class="app-bar pos-absolute bg-green z-1" data-role="appbar">    
+            <button class="app-bar-item c-pointer" id="sidebar-toggle-3">
+              <img class="ctr-nav-logo" data-email="rucocool@gmail.com">
+              <span class="mif-menu fg-white"></span>
+            </button>
+          </div>
+      
+          <div class="h-100 p-4">
+            
+            <div class="ctr-pnl-presentacion pl-20 pr-20 pb-10">
+              <p class="h1">Aplicación Web SPA</p>
+              <p>
+                Aplicación Web Usando JavaScript
+              </p>
+            </div>
+
+            <div class="ctr-pnl-presentacion">
+              <div data-role="panel">
+                <div class="row">
+                  <div class="cell-12">
+
+                    <section id="root"></section>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
 
 </body>
 </html>
