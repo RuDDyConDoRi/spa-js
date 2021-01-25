@@ -1,7 +1,7 @@
 import { controllers } from "./componentes";
 
 const content = document.getElementById('root');
-const router = (route) => {
+const router = async (route) => {
     content.innerHTML = '';
 
     switch (route) {
@@ -10,7 +10,7 @@ const router = (route) => {
         case '#/registro':
             return content.appendChild(controllers.registro());
         case '#/listado':
-            return content.appendChild(controllers.listado());
+            return content.appendChild(await controllers.listado());
         default:
             return content.appendChild(controllers.notFound());
     }
