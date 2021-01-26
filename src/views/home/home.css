@@ -1,4 +1,7 @@
-.titulo {
-    background-color: rgb(4, 24, 19);
-    color: rgba(41, 238, 58, 0.507);
+.titulo, .lead, .display-4 {
+    color: rgba(4, 39, 7, 0.795);
+}
+
+.ctr-parrafo{
+    color: rgba(4, 39, 7, 0.795);
 }
